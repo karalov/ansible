@@ -1,0 +1,10 @@
+---
+ubuntu_packages:
+  - apt-transport-https
+  - ca-certificates
+  - curl
+  - software-properties-common
+redhat-packages:
+  - lvm2
+  - device-mapper-persistent-data
+  - yum-utils

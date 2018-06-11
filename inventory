@@ -1,0 +1,5 @@
+[alinux]
+karalov01 ansible_ssh_user=ec2-user
+karalov02 ansible_ssh_user=ec2-user
+[ubuntu]
+karalov03 ansible_ssh_user=ec2-user
