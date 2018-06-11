@@ -4,7 +4,7 @@ ubuntu_packages:
   - ca-certificates
   - curl
   - software-properties-common
-redhat-packages:
+redhat_packages:
   - lvm2
   - device-mapper-persistent-data
   - yum-utils
