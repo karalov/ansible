@@ -32,12 +32,9 @@
       when: ansible_os_family == "Debian"
 
     - name: add docker repo for RedHat
-      yum_repository:
-        name: docker
-        description: docker repository
-        baseurl: https://download.docker.com/linux/centos/docker-ce.repo
-        state: present
-        file: docker
+      get_url:
+        url: https://download.docker.com/linux/centos/docker-ce.repo
+        dest: /etc/yum.repos.d/docker.repo 
       when: ansible_os_family == "RedHat"
 
     - name: update caches for ubuntu
